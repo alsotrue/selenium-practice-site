@@ -57,7 +57,28 @@ main_html = '''
             <h2>Form Inputs</h2>
             <form action="/form-page" method="post">
                 <label for="text1">Name:</label>
-                <input type="text" id="text1" name="text1">
+                <input type="text" id="text1" name="text1"><br><br>
+
+                <h3>Skills (Checkbox):</h3>
+                <input type="checkbox" id="skill1" name="skills" value="Python">
+                <label for="skill1">Python</label>
+                <input type="checkbox" id="skill2" name="skills" value="Selenium">
+                <label for="skill2">Selenium</label><br><br>
+
+                <h3>Gender (Radio):</h3>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label><br><br>
+
+                <h3>Country:</h3>
+                <select id="country" name="country">
+                    <option value="">--Choose--</option>
+                    <option value="Taiwan">Taiwan</option>
+                    <option value="Japan">Japan</option>
+                    <option value="USA">USA</option>
+                </select><br><br>
+
                 <button type="submit">Submit</button>
             </form>
         </div>
